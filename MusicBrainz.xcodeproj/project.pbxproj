@@ -1,0 +1,1158 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F389A755229342E000CE30EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A754229342E000CE30EE /* AppDelegate.swift */; };
+		F389A75A229342E000CE30EE /* LoginAPIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A759229342E000CE30EE /* LoginAPIDataManager.swift */; };
+		F389A75D229342E000CE30EE /* LoginLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A75C229342E000CE30EE /* LoginLocalDataManager.swift */; };
+		F389A760229342E000CE30EE /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A75F229342E000CE30EE /* LoginInteractor.swift */; };
+		F389A763229342E000CE30EE /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A762229342E000CE30EE /* LoginPresenter.swift */; };
+		F389A766229342E000CE30EE /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A765229342E000CE30EE /* LoginProtocols.swift */; };
+		F389A769229342E000CE30EE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A768229342E000CE30EE /* LoginView.swift */; };
+		F389A76C229342E000CE30EE /* LoginWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A76B229342E000CE30EE /* LoginWireframe.swift */; };
+		F389A76E229342E000CE30EE /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F389A76D229342E000CE30EE /* Login.storyboard */; };
+		F389A773229342E000CE30EE /* SidePanelAPIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A772229342E000CE30EE /* SidePanelAPIDataManager.swift */; };
+		F389A776229342E000CE30EE /* SidePanelLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A775229342E000CE30EE /* SidePanelLocalDataManager.swift */; };
+		F389A779229342E000CE30EE /* SidePanelInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A778229342E000CE30EE /* SidePanelInteractor.swift */; };
+		F389A77C229342E000CE30EE /* SidePanelPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A77B229342E000CE30EE /* SidePanelPresenter.swift */; };
+		F389A77F229342E000CE30EE /* SidePanelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A77E229342E000CE30EE /* SidePanelProtocols.swift */; };
+		F389A782229342E000CE30EE /* SidePanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A781229342E000CE30EE /* SidePanelView.swift */; };
+		F389A786229342E000CE30EE /* Emptycell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A785229342E000CE30EE /* Emptycell.swift */; };
+		F389A788229342E000CE30EE /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A787229342E000CE30EE /* MenuCell.swift */; };
+		F389A78A229342E000CE30EE /* Profilecell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A789229342E000CE30EE /* Profilecell.swift */; };
+		F389A78D229342E000CE30EE /* SidePanelWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A78C229342E000CE30EE /* SidePanelWireframe.swift */; };
+		F389A78F229342E000CE30EE /* SidePanel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F389A78E229342E000CE30EE /* SidePanel.storyboard */; };
+		F389A794229342E000CE30EE /* HomeAPIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A793229342E000CE30EE /* HomeAPIDataManager.swift */; };
+		F389A796229342E000CE30EE /* HomeLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A795229342E000CE30EE /* HomeLocalDataManager.swift */; };
+		F389A799229342E000CE30EE /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A798229342E000CE30EE /* HomeInteractor.swift */; };
+		F389A79C229342E000CE30EE /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A79B229342E000CE30EE /* HomePresenter.swift */; };
+		F389A79F229342E000CE30EE /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A79E229342E000CE30EE /* HomeProtocols.swift */; };
+		F389A7A2229342E000CE30EE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A7A1229342E000CE30EE /* HomeView.swift */; };
+		F389A7A5229342E000CE30EE /* HomeWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A7A4229342E000CE30EE /* HomeWireframe.swift */; };
+		F389A7A7229342E000CE30EE /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F389A7A6229342E000CE30EE /* Home.storyboard */; };
+		F389A7AC229342E000CE30EE /* SettingsAPIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A7AB229342E000CE30EE /* SettingsAPIDataManager.swift */; };
+		F389A7AF229342E000CE30EE /* SettingsLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A7AE229342E000CE30EE /* SettingsLocalDataManager.swift */; };
+		F389A7B2229342E000CE30EE /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A7B1229342E000CE30EE /* SettingsInteractor.swift */; };
+		F389A7B5229342E000CE30EE /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A7B4229342E000CE30EE /* SettingsPresenter.swift */; };
+		F389A7B8229342E000CE30EE /* SettingsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A7B7229342E000CE30EE /* SettingsProtocols.swift */; };
+		F389A7BB229342E000CE30EE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A7BA229342E000CE30EE /* SettingsView.swift */; };
+		F389A7BE229342E000CE30EE /* SettingsWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A7BD229342E000CE30EE /* SettingsWireframe.swift */; };
+		F389A7C0229342E000CE30EE /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F389A7BF229342E000CE30EE /* Settings.storyboard */; };
+		F389A7C2229342E000CE30EE /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A7C1229342E000CE30EE /* AppDependencies.swift */; };
+		F389A7C6229342E000CE30EE /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A7C5229342E000CE30EE /* RootWireframe.swift */; };
+		F389A7CA229342E000CE30EE /* SlideNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F389A7C9229342E000CE30EE /* SlideNavigationController.m */; };
+		F389A7CE229342E000CE30EE /* menu-button.png in Resources */ = {isa = PBXBuildFile; fileRef = F389A7CD229342E000CE30EE /* menu-button.png */; };
+		F389A7D0229342E000CE30EE /* menu-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F389A7CF229342E000CE30EE /* menu-button@2x.png */; };
+		F389A7D5229342E000CE30EE /* SlideNavigationContorllerAnimatorFade.m in Sources */ = {isa = PBXBuildFile; fileRef = F389A7D4229342E000CE30EE /* SlideNavigationContorllerAnimatorFade.m */; };
+		F389A7D8229342E000CE30EE /* SlideNavigationContorllerAnimatorScale.m in Sources */ = {isa = PBXBuildFile; fileRef = F389A7D7229342E000CE30EE /* SlideNavigationContorllerAnimatorScale.m */; };
+		F389A7DB229342E000CE30EE /* SlideNavigationContorllerAnimatorScaleAndFade.m in Sources */ = {isa = PBXBuildFile; fileRef = F389A7DA229342E000CE30EE /* SlideNavigationContorllerAnimatorScaleAndFade.m */; };
+		F389A7DE229342E000CE30EE /* SlideNavigationContorllerAnimatorSlide.m in Sources */ = {isa = PBXBuildFile; fileRef = F389A7DD229342E000CE30EE /* SlideNavigationContorllerAnimatorSlide.m */; };
+		F389A7E1229342E000CE30EE /* SlideNavigationContorllerAnimatorSlideAndFade.m in Sources */ = {isa = PBXBuildFile; fileRef = F389A7E0229342E000CE30EE /* SlideNavigationContorllerAnimatorSlideAndFade.m */; };
+		F389A7E5229342E000CE30EE /* AppEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A7E4229342E000CE30EE /* AppEnums.swift */; };
+		F389A7E9229342E000CE30EE /* CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A7E8229342E000CE30EE /* CLLocationCoordinate2D.swift */; };
+		F389A7EB229342E000CE30EE /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A7EA229342E000CE30EE /* Double.swift */; };
+		F389A7ED229342E000CE30EE /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A7EC229342E000CE30EE /* Notification.swift */; };
+		F389A7EF229342E000CE30EE /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A7EE229342E000CE30EE /* Sequence.swift */; };
+		F389A7F1229342E000CE30EE /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A7F0229342E000CE30EE /* String.swift */; };
+		F389A7F5229342E000CE30EE /* UILayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A7F4229342E000CE30EE /* UILayout.swift */; };
+		F389A7F7229342E000CE30EE /* UIViewAutolayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A7F6229342E000CE30EE /* UIViewAutolayout.swift */; };
+		F389A7F9229342E000CE30EE /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A7F8229342E000CE30EE /* UICollectionView.swift */; };
+		F389A7FB229342E000CE30EE /* UICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A7FA229342E000CE30EE /* UICollectionViewCell.swift */; };
+		F389A7FD229342E000CE30EE /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A7FC229342E000CE30EE /* UIColor.swift */; };
+		F389A7FF229342E000CE30EE /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A7FE229342E000CE30EE /* UIDevice.swift */; };
+		F389A801229342E000CE30EE /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A800229342E000CE30EE /* UILabel.swift */; };
+		F389A803229342E000CE30EE /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A802229342E000CE30EE /* UIStoryboard.swift */; };
+		F389A805229342E000CE30EE /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A804229342E000CE30EE /* UIView.swift */; };
+		F389A807229342E000CE30EE /* UIVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A806229342E000CE30EE /* UIVIewController.swift */; };
+		F389A809229342E000CE30EE /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A808229342E000CE30EE /* UIWindow.swift */; };
+		F389A80D229342E000CE30EE /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A80C229342E000CE30EE /* Storyboard.swift */; };
+		F389A812229342E000CE30EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F389A810229342E000CE30EE /* Main.storyboard */; };
+		F389A814229342E100CE30EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F389A813229342E100CE30EE /* Assets.xcassets */; };
+		F389A817229342E100CE30EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F389A815229342E100CE30EE /* LaunchScreen.storyboard */; };
+		F389A822229342E100CE30EE /* MusicBrainzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A821229342E100CE30EE /* MusicBrainzTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F389A81E229342E100CE30EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F389A748229342E000CE30EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F389A74F229342E000CE30EE;
+			remoteInfo = MusicBrainz;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F389A750229342E000CE30EE /* MusicBrainz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicBrainz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F389A754229342E000CE30EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F389A759229342E000CE30EE /* LoginAPIDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginAPIDataManager.swift; path = Login/DataManager/API/LoginAPIDataManager.swift; sourceTree = "<group>"; };
+		F389A75C229342E000CE30EE /* LoginLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginLocalDataManager.swift; path = Login/DataManager/Local/LoginLocalDataManager.swift; sourceTree = "<group>"; };
+		F389A75F229342E000CE30EE /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginInteractor.swift; path = Login/Interactor/LoginInteractor.swift; sourceTree = "<group>"; };
+		F389A762229342E000CE30EE /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginPresenter.swift; path = Login/Presenter/LoginPresenter.swift; sourceTree = "<group>"; };
+		F389A765229342E000CE30EE /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginProtocols.swift; path = Login/Protocols/LoginProtocols.swift; sourceTree = "<group>"; };
+		F389A768229342E000CE30EE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = Login/View/LoginView.swift; sourceTree = "<group>"; };
+		F389A76B229342E000CE30EE /* LoginWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginWireframe.swift; path = Login/Wireframe/LoginWireframe.swift; sourceTree = "<group>"; };
+		F389A76D229342E000CE30EE /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Login.storyboard; path = Login/Login.storyboard; sourceTree = "<group>"; };
+		F389A772229342E000CE30EE /* SidePanelAPIDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SidePanelAPIDataManager.swift; path = SidePanel/DataManager/API/SidePanelAPIDataManager.swift; sourceTree = "<group>"; };
+		F389A775229342E000CE30EE /* SidePanelLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SidePanelLocalDataManager.swift; path = SidePanel/DataManager/Local/SidePanelLocalDataManager.swift; sourceTree = "<group>"; };
+		F389A778229342E000CE30EE /* SidePanelInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SidePanelInteractor.swift; path = SidePanel/Interactor/SidePanelInteractor.swift; sourceTree = "<group>"; };
+		F389A77B229342E000CE30EE /* SidePanelPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SidePanelPresenter.swift; path = SidePanel/Presenter/SidePanelPresenter.swift; sourceTree = "<group>"; };
+		F389A77E229342E000CE30EE /* SidePanelProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SidePanelProtocols.swift; path = SidePanel/Protocols/SidePanelProtocols.swift; sourceTree = "<group>"; };
+		F389A781229342E000CE30EE /* SidePanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SidePanelView.swift; path = SidePanel/View/SidePanelView.swift; sourceTree = "<group>"; };
+		F389A785229342E000CE30EE /* Emptycell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Emptycell.swift; path = SidePanel/View/CustomViews/LeftMenuCell/Emptycell.swift; sourceTree = "<group>"; };
+		F389A787229342E000CE30EE /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuCell.swift; path = SidePanel/View/CustomViews/LeftMenuCell/MenuCell.swift; sourceTree = "<group>"; };
+		F389A789229342E000CE30EE /* Profilecell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Profilecell.swift; path = SidePanel/View/CustomViews/LeftMenuCell/Profilecell.swift; sourceTree = "<group>"; };
+		F389A78C229342E000CE30EE /* SidePanelWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SidePanelWireframe.swift; path = SidePanel/Wireframe/SidePanelWireframe.swift; sourceTree = "<group>"; };
+		F389A78E229342E000CE30EE /* SidePanel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = SidePanel.storyboard; path = SidePanel/SidePanel.storyboard; sourceTree = "<group>"; };
+		F389A793229342E000CE30EE /* HomeAPIDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeAPIDataManager.swift; path = Home/DataManager/API/HomeAPIDataManager.swift; sourceTree = "<group>"; };
+		F389A795229342E000CE30EE /* HomeLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeLocalDataManager.swift; path = Home/DataManager/Local/HomeLocalDataManager.swift; sourceTree = "<group>"; };
+		F389A798229342E000CE30EE /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeInteractor.swift; path = Home/Interactor/HomeInteractor.swift; sourceTree = "<group>"; };
+		F389A79B229342E000CE30EE /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomePresenter.swift; path = Home/Presenter/HomePresenter.swift; sourceTree = "<group>"; };
+		F389A79E229342E000CE30EE /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeProtocols.swift; path = Home/Protocols/HomeProtocols.swift; sourceTree = "<group>"; };
+		F389A7A1229342E000CE30EE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = Home/View/HomeView.swift; sourceTree = "<group>"; };
+		F389A7A4229342E000CE30EE /* HomeWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeWireframe.swift; path = Home/Wireframe/HomeWireframe.swift; sourceTree = "<group>"; };
+		F389A7A6229342E000CE30EE /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Home.storyboard; path = Home/Home.storyboard; sourceTree = "<group>"; };
+		F389A7AB229342E000CE30EE /* SettingsAPIDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsAPIDataManager.swift; path = Settings/DataManager/API/SettingsAPIDataManager.swift; sourceTree = "<group>"; };
+		F389A7AE229342E000CE30EE /* SettingsLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsLocalDataManager.swift; path = Settings/DataManager/Local/SettingsLocalDataManager.swift; sourceTree = "<group>"; };
+		F389A7B1229342E000CE30EE /* SettingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsInteractor.swift; path = Settings/Interactor/SettingsInteractor.swift; sourceTree = "<group>"; };
+		F389A7B4229342E000CE30EE /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsPresenter.swift; path = Settings/Presenter/SettingsPresenter.swift; sourceTree = "<group>"; };
+		F389A7B7229342E000CE30EE /* SettingsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsProtocols.swift; path = Settings/Protocols/SettingsProtocols.swift; sourceTree = "<group>"; };
+		F389A7BA229342E000CE30EE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsView.swift; path = Settings/View/SettingsView.swift; sourceTree = "<group>"; };
+		F389A7BD229342E000CE30EE /* SettingsWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsWireframe.swift; path = Settings/Wireframe/SettingsWireframe.swift; sourceTree = "<group>"; };
+		F389A7BF229342E000CE30EE /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Settings.storyboard; path = Settings/Settings.storyboard; sourceTree = "<group>"; };
+		F389A7C1229342E000CE30EE /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDependencies.swift; path = AppDelegate/AppDependencies.swift; sourceTree = "<group>"; };
+		F389A7C5229342E000CE30EE /* RootWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RootWireframe.swift; path = Resources/View/RootWireframe.swift; sourceTree = "<group>"; };
+		F389A7C9229342E000CE30EE /* SlideNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SlideNavigationController.m; path = Resources/View/SideMenu/Source/SlideNavigationController.m; sourceTree = "<group>"; };
+		F389A7CB229342E000CE30EE /* SlideNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SlideNavigationController.h; path = Resources/View/SideMenu/Source/SlideNavigationController.h; sourceTree = "<group>"; };
+		F389A7CD229342E000CE30EE /* menu-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu-button.png"; path = "Resources/View/SideMenu/Source/Assets/menu-button.png"; sourceTree = "<group>"; };
+		F389A7CF229342E000CE30EE /* menu-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu-button@2x.png"; path = "Resources/View/SideMenu/Source/Assets/menu-button@2x.png"; sourceTree = "<group>"; };
+		F389A7D2229342E000CE30EE /* SlideNavigationContorllerAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SlideNavigationContorllerAnimator.h; path = Resources/View/SideMenu/Source/Animations/SlideNavigationContorllerAnimator.h; sourceTree = "<group>"; };
+		F389A7D3229342E000CE30EE /* SlideNavigationContorllerAnimatorFade.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SlideNavigationContorllerAnimatorFade.h; path = Resources/View/SideMenu/Source/Animations/SlideNavigationContorllerAnimatorFade.h; sourceTree = "<group>"; };
+		F389A7D4229342E000CE30EE /* SlideNavigationContorllerAnimatorFade.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SlideNavigationContorllerAnimatorFade.m; path = Resources/View/SideMenu/Source/Animations/SlideNavigationContorllerAnimatorFade.m; sourceTree = "<group>"; };
+		F389A7D6229342E000CE30EE /* SlideNavigationContorllerAnimatorScale.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SlideNavigationContorllerAnimatorScale.h; path = Resources/View/SideMenu/Source/Animations/SlideNavigationContorllerAnimatorScale.h; sourceTree = "<group>"; };
+		F389A7D7229342E000CE30EE /* SlideNavigationContorllerAnimatorScale.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SlideNavigationContorllerAnimatorScale.m; path = Resources/View/SideMenu/Source/Animations/SlideNavigationContorllerAnimatorScale.m; sourceTree = "<group>"; };
+		F389A7D9229342E000CE30EE /* SlideNavigationContorllerAnimatorScaleAndFade.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SlideNavigationContorllerAnimatorScaleAndFade.h; path = Resources/View/SideMenu/Source/Animations/SlideNavigationContorllerAnimatorScaleAndFade.h; sourceTree = "<group>"; };
+		F389A7DA229342E000CE30EE /* SlideNavigationContorllerAnimatorScaleAndFade.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SlideNavigationContorllerAnimatorScaleAndFade.m; path = Resources/View/SideMenu/Source/Animations/SlideNavigationContorllerAnimatorScaleAndFade.m; sourceTree = "<group>"; };
+		F389A7DC229342E000CE30EE /* SlideNavigationContorllerAnimatorSlide.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SlideNavigationContorllerAnimatorSlide.h; path = Resources/View/SideMenu/Source/Animations/SlideNavigationContorllerAnimatorSlide.h; sourceTree = "<group>"; };
+		F389A7DD229342E000CE30EE /* SlideNavigationContorllerAnimatorSlide.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SlideNavigationContorllerAnimatorSlide.m; path = Resources/View/SideMenu/Source/Animations/SlideNavigationContorllerAnimatorSlide.m; sourceTree = "<group>"; };
+		F389A7DF229342E000CE30EE /* SlideNavigationContorllerAnimatorSlideAndFade.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SlideNavigationContorllerAnimatorSlideAndFade.h; path = Resources/View/SideMenu/Source/Animations/SlideNavigationContorllerAnimatorSlideAndFade.h; sourceTree = "<group>"; };
+		F389A7E0229342E000CE30EE /* SlideNavigationContorllerAnimatorSlideAndFade.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SlideNavigationContorllerAnimatorSlideAndFade.m; path = Resources/View/SideMenu/Source/Animations/SlideNavigationContorllerAnimatorSlideAndFade.m; sourceTree = "<group>"; };
+		F389A7E4229342E000CE30EE /* AppEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppEnums.swift; path = Resources/Util/Enums/AppEnums.swift; sourceTree = "<group>"; };
+		F389A7E8229342E000CE30EE /* CLLocationCoordinate2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CLLocationCoordinate2D.swift; path = Resources/Util/Extensions/Foundation/CLLocationCoordinate2D.swift; sourceTree = "<group>"; };
+		F389A7EA229342E000CE30EE /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Double.swift; path = Resources/Util/Extensions/Foundation/Double.swift; sourceTree = "<group>"; };
+		F389A7EC229342E000CE30EE /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Notification.swift; path = Resources/Util/Extensions/Foundation/Notification.swift; sourceTree = "<group>"; };
+		F389A7EE229342E000CE30EE /* Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Sequence.swift; path = Resources/Util/Extensions/Foundation/Sequence.swift; sourceTree = "<group>"; };
+		F389A7F0229342E000CE30EE /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = String.swift; path = Resources/Util/Extensions/Foundation/String.swift; sourceTree = "<group>"; };
+		F389A7F4229342E000CE30EE /* UILayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UILayout.swift; path = Resources/Util/Extensions/UIKit/Autolayout/UILayout.swift; sourceTree = "<group>"; };
+		F389A7F6229342E000CE30EE /* UIViewAutolayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewAutolayout.swift; path = Resources/Util/Extensions/UIKit/Autolayout/UIViewAutolayout.swift; sourceTree = "<group>"; };
+		F389A7F8229342E000CE30EE /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UICollectionView.swift; path = Resources/Util/Extensions/UIKit/UICollectionView.swift; sourceTree = "<group>"; };
+		F389A7FA229342E000CE30EE /* UICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UICollectionViewCell.swift; path = Resources/Util/Extensions/UIKit/UICollectionViewCell.swift; sourceTree = "<group>"; };
+		F389A7FC229342E000CE30EE /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIColor.swift; path = Resources/Util/Extensions/UIKit/UIColor.swift; sourceTree = "<group>"; };
+		F389A7FE229342E000CE30EE /* UIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIDevice.swift; path = Resources/Util/Extensions/UIKit/UIDevice.swift; sourceTree = "<group>"; };
+		F389A800229342E000CE30EE /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UILabel.swift; path = Resources/Util/Extensions/UIKit/UILabel.swift; sourceTree = "<group>"; };
+		F389A802229342E000CE30EE /* UIStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIStoryboard.swift; path = Resources/Util/Extensions/UIKit/UIStoryboard.swift; sourceTree = "<group>"; };
+		F389A804229342E000CE30EE /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = Resources/Util/Extensions/UIKit/UIView.swift; sourceTree = "<group>"; };
+		F389A806229342E000CE30EE /* UIVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIVIewController.swift; path = Resources/Util/Extensions/UIKit/UIVIewController.swift; sourceTree = "<group>"; };
+		F389A808229342E000CE30EE /* UIWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIWindow.swift; path = Resources/Util/Extensions/UIKit/UIWindow.swift; sourceTree = "<group>"; };
+		F389A80C229342E000CE30EE /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Storyboard.swift; path = UI/Storyboards/Storyboard.swift; sourceTree = "<group>"; };
+		F389A80F229342E000CE30EE /* MusicBrainz-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MusicBrainz-Bridging-Header.h"; path = "SupportingFiles/MusicBrainz-Bridging-Header.h"; sourceTree = "<group>"; };
+		F389A811229342E000CE30EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F389A813229342E100CE30EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F389A816229342E100CE30EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F389A818229342E100CE30EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F389A81D229342E100CE30EE /* MusicBrainzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicBrainzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F389A821229342E100CE30EE /* MusicBrainzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicBrainzTests.swift; sourceTree = "<group>"; };
+		F389A823229342E100CE30EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F389A74D229342E000CE30EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F389A81A229342E100CE30EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F389A747229342E000CE30EE = {
+			isa = PBXGroup;
+			children = (
+				F389A752229342E000CE30EE /* MusicBrainz */,
+				F389A820229342E100CE30EE /* MusicBrainzTests */,
+				F389A751229342E000CE30EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F389A751229342E000CE30EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F389A750229342E000CE30EE /* MusicBrainz.app */,
+				F389A81D229342E100CE30EE /* MusicBrainzTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F389A752229342E000CE30EE /* MusicBrainz */ = {
+			isa = PBXGroup;
+			children = (
+				F389A810229342E000CE30EE /* Main.storyboard */,
+				F389A813229342E100CE30EE /* Assets.xcassets */,
+				F389A815229342E100CE30EE /* LaunchScreen.storyboard */,
+				F389A818229342E100CE30EE /* Info.plist */,
+				F389A753229342E000CE30EE /* AppDelegate */,
+				F389A756229342E000CE30EE /* Login */,
+				F389A76F229342E000CE30EE /* SidePanel */,
+				F389A790229342E000CE30EE /* Home */,
+				F389A7A8229342E000CE30EE /* Settings */,
+				F389A7C3229342E000CE30EE /* Resources */,
+				F389A80A229342E000CE30EE /* UI */,
+				F389A80E229342E000CE30EE /* SupportingFiles */,
+			);
+			path = MusicBrainz;
+			sourceTree = "<group>";
+		};
+		F389A753229342E000CE30EE /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				F389A754229342E000CE30EE /* AppDelegate.swift */,
+				F389A7C1229342E000CE30EE /* AppDependencies.swift */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		F389A756229342E000CE30EE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F389A76D229342E000CE30EE /* Login.storyboard */,
+				F389A757229342E000CE30EE /* DataManager */,
+				F389A75E229342E000CE30EE /* Interactor */,
+				F389A761229342E000CE30EE /* Presenter */,
+				F389A764229342E000CE30EE /* Protocols */,
+				F389A767229342E000CE30EE /* View */,
+				F389A76A229342E000CE30EE /* Wireframe */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		F389A757229342E000CE30EE /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				F389A758229342E000CE30EE /* API */,
+				F389A75B229342E000CE30EE /* Local */,
+			);
+			name = DataManager;
+			sourceTree = "<group>";
+		};
+		F389A758229342E000CE30EE /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F389A759229342E000CE30EE /* LoginAPIDataManager.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		F389A75B229342E000CE30EE /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				F389A75C229342E000CE30EE /* LoginLocalDataManager.swift */,
+			);
+			name = Local;
+			sourceTree = "<group>";
+		};
+		F389A75E229342E000CE30EE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F389A75F229342E000CE30EE /* LoginInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		F389A761229342E000CE30EE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F389A762229342E000CE30EE /* LoginPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		F389A764229342E000CE30EE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F389A765229342E000CE30EE /* LoginProtocols.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		F389A767229342E000CE30EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F389A768229342E000CE30EE /* LoginView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F389A76A229342E000CE30EE /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				F389A76B229342E000CE30EE /* LoginWireframe.swift */,
+			);
+			name = Wireframe;
+			sourceTree = "<group>";
+		};
+		F389A76F229342E000CE30EE /* SidePanel */ = {
+			isa = PBXGroup;
+			children = (
+				F389A78E229342E000CE30EE /* SidePanel.storyboard */,
+				F389A770229342E000CE30EE /* DataManager */,
+				F389A777229342E000CE30EE /* Interactor */,
+				F389A77A229342E000CE30EE /* Presenter */,
+				F389A77D229342E000CE30EE /* Protocols */,
+				F389A780229342E000CE30EE /* View */,
+				F389A78B229342E000CE30EE /* Wireframe */,
+			);
+			name = SidePanel;
+			sourceTree = "<group>";
+		};
+		F389A770229342E000CE30EE /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				F389A771229342E000CE30EE /* API */,
+				F389A774229342E000CE30EE /* Local */,
+			);
+			name = DataManager;
+			sourceTree = "<group>";
+		};
+		F389A771229342E000CE30EE /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F389A772229342E000CE30EE /* SidePanelAPIDataManager.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		F389A774229342E000CE30EE /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				F389A775229342E000CE30EE /* SidePanelLocalDataManager.swift */,
+			);
+			name = Local;
+			sourceTree = "<group>";
+		};
+		F389A777229342E000CE30EE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F389A778229342E000CE30EE /* SidePanelInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		F389A77A229342E000CE30EE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F389A77B229342E000CE30EE /* SidePanelPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		F389A77D229342E000CE30EE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F389A77E229342E000CE30EE /* SidePanelProtocols.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		F389A780229342E000CE30EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F389A781229342E000CE30EE /* SidePanelView.swift */,
+				F389A783229342E000CE30EE /* CustomViews */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F389A783229342E000CE30EE /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				F389A784229342E000CE30EE /* LeftMenuCell */,
+			);
+			name = CustomViews;
+			sourceTree = "<group>";
+		};
+		F389A784229342E000CE30EE /* LeftMenuCell */ = {
+			isa = PBXGroup;
+			children = (
+				F389A785229342E000CE30EE /* Emptycell.swift */,
+				F389A787229342E000CE30EE /* MenuCell.swift */,
+				F389A789229342E000CE30EE /* Profilecell.swift */,
+			);
+			name = LeftMenuCell;
+			sourceTree = "<group>";
+		};
+		F389A78B229342E000CE30EE /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				F389A78C229342E000CE30EE /* SidePanelWireframe.swift */,
+			);
+			name = Wireframe;
+			sourceTree = "<group>";
+		};
+		F389A790229342E000CE30EE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F389A7A6229342E000CE30EE /* Home.storyboard */,
+				F389A791229342E000CE30EE /* DataManager */,
+				F389A797229342E000CE30EE /* Interactor */,
+				F389A79A229342E000CE30EE /* Presenter */,
+				F389A79D229342E000CE30EE /* Protocols */,
+				F389A7A0229342E000CE30EE /* View */,
+				F389A7A3229342E000CE30EE /* Wireframe */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		F389A791229342E000CE30EE /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				F389A792229342E000CE30EE /* API */,
+			);
+			name = DataManager;
+			sourceTree = "<group>";
+		};
+		F389A792229342E000CE30EE /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F389A793229342E000CE30EE /* HomeAPIDataManager.swift */,
+				F389A795229342E000CE30EE /* HomeLocalDataManager.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		F389A797229342E000CE30EE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F389A798229342E000CE30EE /* HomeInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		F389A79A229342E000CE30EE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F389A79B229342E000CE30EE /* HomePresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		F389A79D229342E000CE30EE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F389A79E229342E000CE30EE /* HomeProtocols.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		F389A7A0229342E000CE30EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F389A7A1229342E000CE30EE /* HomeView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F389A7A3229342E000CE30EE /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				F389A7A4229342E000CE30EE /* HomeWireframe.swift */,
+			);
+			name = Wireframe;
+			sourceTree = "<group>";
+		};
+		F389A7A8229342E000CE30EE /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F389A7BF229342E000CE30EE /* Settings.storyboard */,
+				F389A7A9229342E000CE30EE /* DataManager */,
+				F389A7B0229342E000CE30EE /* Interactor */,
+				F389A7B3229342E000CE30EE /* Presenter */,
+				F389A7B6229342E000CE30EE /* Protocols */,
+				F389A7B9229342E000CE30EE /* View */,
+				F389A7BC229342E000CE30EE /* Wireframe */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		F389A7A9229342E000CE30EE /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				F389A7AA229342E000CE30EE /* API */,
+				F389A7AD229342E000CE30EE /* Local */,
+			);
+			name = DataManager;
+			sourceTree = "<group>";
+		};
+		F389A7AA229342E000CE30EE /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F389A7AB229342E000CE30EE /* SettingsAPIDataManager.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		F389A7AD229342E000CE30EE /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				F389A7AE229342E000CE30EE /* SettingsLocalDataManager.swift */,
+			);
+			name = Local;
+			sourceTree = "<group>";
+		};
+		F389A7B0229342E000CE30EE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F389A7B1229342E000CE30EE /* SettingsInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		F389A7B3229342E000CE30EE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F389A7B4229342E000CE30EE /* SettingsPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		F389A7B6229342E000CE30EE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F389A7B7229342E000CE30EE /* SettingsProtocols.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		F389A7B9229342E000CE30EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F389A7BA229342E000CE30EE /* SettingsView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F389A7BC229342E000CE30EE /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				F389A7BD229342E000CE30EE /* SettingsWireframe.swift */,
+			);
+			name = Wireframe;
+			sourceTree = "<group>";
+		};
+		F389A7C3229342E000CE30EE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F389A7C4229342E000CE30EE /* View */,
+				F389A7E2229342E000CE30EE /* Util */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F389A7C4229342E000CE30EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F389A7C5229342E000CE30EE /* RootWireframe.swift */,
+				F389A7C7229342E000CE30EE /* SideMenu */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F389A7C7229342E000CE30EE /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				F389A7C8229342E000CE30EE /* Source */,
+			);
+			name = SideMenu;
+			sourceTree = "<group>";
+		};
+		F389A7C8229342E000CE30EE /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F389A7C9229342E000CE30EE /* SlideNavigationController.m */,
+				F389A7CB229342E000CE30EE /* SlideNavigationController.h */,
+				F389A7CC229342E000CE30EE /* Assets */,
+				F389A7D1229342E000CE30EE /* Animations */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		F389A7CC229342E000CE30EE /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F389A7CD229342E000CE30EE /* menu-button.png */,
+				F389A7CF229342E000CE30EE /* menu-button@2x.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		F389A7D1229342E000CE30EE /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				F389A7D2229342E000CE30EE /* SlideNavigationContorllerAnimator.h */,
+				F389A7D3229342E000CE30EE /* SlideNavigationContorllerAnimatorFade.h */,
+				F389A7D4229342E000CE30EE /* SlideNavigationContorllerAnimatorFade.m */,
+				F389A7D6229342E000CE30EE /* SlideNavigationContorllerAnimatorScale.h */,
+				F389A7D7229342E000CE30EE /* SlideNavigationContorllerAnimatorScale.m */,
+				F389A7D9229342E000CE30EE /* SlideNavigationContorllerAnimatorScaleAndFade.h */,
+				F389A7DA229342E000CE30EE /* SlideNavigationContorllerAnimatorScaleAndFade.m */,
+				F389A7DC229342E000CE30EE /* SlideNavigationContorllerAnimatorSlide.h */,
+				F389A7DD229342E000CE30EE /* SlideNavigationContorllerAnimatorSlide.m */,
+				F389A7DF229342E000CE30EE /* SlideNavigationContorllerAnimatorSlideAndFade.h */,
+				F389A7E0229342E000CE30EE /* SlideNavigationContorllerAnimatorSlideAndFade.m */,
+			);
+			name = Animations;
+			sourceTree = "<group>";
+		};
+		F389A7E2229342E000CE30EE /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				F389A7E3229342E000CE30EE /* Enums */,
+				F389A7E6229342E000CE30EE /* Extensions */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		F389A7E3229342E000CE30EE /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				F389A7E4229342E000CE30EE /* AppEnums.swift */,
+			);
+			name = Enums;
+			sourceTree = "<group>";
+		};
+		F389A7E6229342E000CE30EE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F389A7E7229342E000CE30EE /* Foundation */,
+				F389A7F2229342E000CE30EE /* UIKit */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		F389A7E7229342E000CE30EE /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				F389A7E8229342E000CE30EE /* CLLocationCoordinate2D.swift */,
+				F389A7EA229342E000CE30EE /* Double.swift */,
+				F389A7EC229342E000CE30EE /* Notification.swift */,
+				F389A7EE229342E000CE30EE /* Sequence.swift */,
+				F389A7F0229342E000CE30EE /* String.swift */,
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
+		F389A7F2229342E000CE30EE /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				F389A7F8229342E000CE30EE /* UICollectionView.swift */,
+				F389A7FA229342E000CE30EE /* UICollectionViewCell.swift */,
+				F389A7FC229342E000CE30EE /* UIColor.swift */,
+				F389A7FE229342E000CE30EE /* UIDevice.swift */,
+				F389A800229342E000CE30EE /* UILabel.swift */,
+				F389A802229342E000CE30EE /* UIStoryboard.swift */,
+				F389A804229342E000CE30EE /* UIView.swift */,
+				F389A806229342E000CE30EE /* UIVIewController.swift */,
+				F389A808229342E000CE30EE /* UIWindow.swift */,
+				F389A7F3229342E000CE30EE /* Autolayout */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		F389A7F3229342E000CE30EE /* Autolayout */ = {
+			isa = PBXGroup;
+			children = (
+				F389A7F4229342E000CE30EE /* UILayout.swift */,
+				F389A7F6229342E000CE30EE /* UIViewAutolayout.swift */,
+			);
+			name = Autolayout;
+			sourceTree = "<group>";
+		};
+		F389A80A229342E000CE30EE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F389A80B229342E000CE30EE /* Storyboards */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		F389A80B229342E000CE30EE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F389A80C229342E000CE30EE /* Storyboard.swift */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		F389A80E229342E000CE30EE /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F389A80F229342E000CE30EE /* MusicBrainz-Bridging-Header.h */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		F389A820229342E100CE30EE /* MusicBrainzTests */ = {
+			isa = PBXGroup;
+			children = (
+				F389A821229342E100CE30EE /* MusicBrainzTests.swift */,
+				F389A823229342E100CE30EE /* Info.plist */,
+			);
+			path = MusicBrainzTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F389A74F229342E000CE30EE /* MusicBrainz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F389A826229342E100CE30EE /* Build configuration list for PBXNativeTarget "MusicBrainz" */;
+			buildPhases = (
+				F389A74C229342E000CE30EE /* Sources */,
+				F389A74D229342E000CE30EE /* Frameworks */,
+				F389A74E229342E000CE30EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MusicBrainz;
+			productName = MusicBrainz;
+			productReference = F389A750229342E000CE30EE /* MusicBrainz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F389A81C229342E100CE30EE /* MusicBrainzTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F389A829229342E100CE30EE /* Build configuration list for PBXNativeTarget "MusicBrainzTests" */;
+			buildPhases = (
+				F389A819229342E100CE30EE /* Sources */,
+				F389A81A229342E100CE30EE /* Frameworks */,
+				F389A81B229342E100CE30EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F389A81F229342E100CE30EE /* PBXTargetDependency */,
+			);
+			name = MusicBrainzTests;
+			productName = MusicBrainzTests;
+			productReference = F389A81D229342E100CE30EE /* MusicBrainzTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F389A748229342E000CE30EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = lyzkov;
+				TargetAttributes = {
+					F389A74F229342E000CE30EE = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					F389A81C229342E100CE30EE = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = F389A74F229342E000CE30EE;
+					};
+				};
+			};
+			buildConfigurationList = F389A74B229342E000CE30EE /* Build configuration list for PBXProject "MusicBrainz" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F389A747229342E000CE30EE;
+			productRefGroup = F389A751229342E000CE30EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F389A74F229342E000CE30EE /* MusicBrainz */,
+				F389A81C229342E100CE30EE /* MusicBrainzTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F389A74E229342E000CE30EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F389A817229342E100CE30EE /* LaunchScreen.storyboard in Resources */,
+				F389A812229342E000CE30EE /* Main.storyboard in Resources */,
+				F389A7A7229342E000CE30EE /* Home.storyboard in Resources */,
+				F389A7CE229342E000CE30EE /* menu-button.png in Resources */,
+				F389A78F229342E000CE30EE /* SidePanel.storyboard in Resources */,
+				F389A76E229342E000CE30EE /* Login.storyboard in Resources */,
+				F389A7C0229342E000CE30EE /* Settings.storyboard in Resources */,
+				F389A814229342E100CE30EE /* Assets.xcassets in Resources */,
+				F389A7D0229342E000CE30EE /* menu-button@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F389A81B229342E100CE30EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F389A74C229342E000CE30EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F389A77F229342E000CE30EE /* SidePanelProtocols.swift in Sources */,
+				F389A79F229342E000CE30EE /* HomeProtocols.swift in Sources */,
+				F389A7F1229342E000CE30EE /* String.swift in Sources */,
+				F389A809229342E000CE30EE /* UIWindow.swift in Sources */,
+				F389A7D8229342E000CE30EE /* SlideNavigationContorllerAnimatorScale.m in Sources */,
+				F389A7C6229342E000CE30EE /* RootWireframe.swift in Sources */,
+				F389A760229342E000CE30EE /* LoginInteractor.swift in Sources */,
+				F389A7B2229342E000CE30EE /* SettingsInteractor.swift in Sources */,
+				F389A7B8229342E000CE30EE /* SettingsProtocols.swift in Sources */,
+				F389A7BE229342E000CE30EE /* SettingsWireframe.swift in Sources */,
+				F389A7ED229342E000CE30EE /* Notification.swift in Sources */,
+				F389A7A5229342E000CE30EE /* HomeWireframe.swift in Sources */,
+				F389A7F5229342E000CE30EE /* UILayout.swift in Sources */,
+				F389A7DB229342E000CE30EE /* SlideNavigationContorllerAnimatorScaleAndFade.m in Sources */,
+				F389A796229342E000CE30EE /* HomeLocalDataManager.swift in Sources */,
+				F389A782229342E000CE30EE /* SidePanelView.swift in Sources */,
+				F389A78A229342E000CE30EE /* Profilecell.swift in Sources */,
+				F389A769229342E000CE30EE /* LoginView.swift in Sources */,
+				F389A7F7229342E000CE30EE /* UIViewAutolayout.swift in Sources */,
+				F389A799229342E000CE30EE /* HomeInteractor.swift in Sources */,
+				F389A7C2229342E000CE30EE /* AppDependencies.swift in Sources */,
+				F389A76C229342E000CE30EE /* LoginWireframe.swift in Sources */,
+				F389A75A229342E000CE30EE /* LoginAPIDataManager.swift in Sources */,
+				F389A7FB229342E000CE30EE /* UICollectionViewCell.swift in Sources */,
+				F389A755229342E000CE30EE /* AppDelegate.swift in Sources */,
+				F389A803229342E000CE30EE /* UIStoryboard.swift in Sources */,
+				F389A80D229342E000CE30EE /* Storyboard.swift in Sources */,
+				F389A7F9229342E000CE30EE /* UICollectionView.swift in Sources */,
+				F389A7B5229342E000CE30EE /* SettingsPresenter.swift in Sources */,
+				F389A7D5229342E000CE30EE /* SlideNavigationContorllerAnimatorFade.m in Sources */,
+				F389A7E5229342E000CE30EE /* AppEnums.swift in Sources */,
+				F389A776229342E000CE30EE /* SidePanelLocalDataManager.swift in Sources */,
+				F389A801229342E000CE30EE /* UILabel.swift in Sources */,
+				F389A773229342E000CE30EE /* SidePanelAPIDataManager.swift in Sources */,
+				F389A7DE229342E000CE30EE /* SlideNavigationContorllerAnimatorSlide.m in Sources */,
+				F389A766229342E000CE30EE /* LoginProtocols.swift in Sources */,
+				F389A77C229342E000CE30EE /* SidePanelPresenter.swift in Sources */,
+				F389A805229342E000CE30EE /* UIView.swift in Sources */,
+				F389A786229342E000CE30EE /* Emptycell.swift in Sources */,
+				F389A794229342E000CE30EE /* HomeAPIDataManager.swift in Sources */,
+				F389A779229342E000CE30EE /* SidePanelInteractor.swift in Sources */,
+				F389A75D229342E000CE30EE /* LoginLocalDataManager.swift in Sources */,
+				F389A7EB229342E000CE30EE /* Double.swift in Sources */,
+				F389A788229342E000CE30EE /* MenuCell.swift in Sources */,
+				F389A78D229342E000CE30EE /* SidePanelWireframe.swift in Sources */,
+				F389A7FD229342E000CE30EE /* UIColor.swift in Sources */,
+				F389A7A2229342E000CE30EE /* HomeView.swift in Sources */,
+				F389A763229342E000CE30EE /* LoginPresenter.swift in Sources */,
+				F389A7AF229342E000CE30EE /* SettingsLocalDataManager.swift in Sources */,
+				F389A7EF229342E000CE30EE /* Sequence.swift in Sources */,
+				F389A79C229342E000CE30EE /* HomePresenter.swift in Sources */,
+				F389A7BB229342E000CE30EE /* SettingsView.swift in Sources */,
+				F389A7FF229342E000CE30EE /* UIDevice.swift in Sources */,
+				F389A7AC229342E000CE30EE /* SettingsAPIDataManager.swift in Sources */,
+				F389A7E1229342E000CE30EE /* SlideNavigationContorllerAnimatorSlideAndFade.m in Sources */,
+				F389A7CA229342E000CE30EE /* SlideNavigationController.m in Sources */,
+				F389A807229342E000CE30EE /* UIVIewController.swift in Sources */,
+				F389A7E9229342E000CE30EE /* CLLocationCoordinate2D.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F389A819229342E100CE30EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F389A822229342E100CE30EE /* MusicBrainzTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F389A81F229342E100CE30EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F389A74F229342E000CE30EE /* MusicBrainz */;
+			targetProxy = F389A81E229342E100CE30EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F389A810229342E000CE30EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F389A811229342E000CE30EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F389A815229342E100CE30EE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F389A816229342E100CE30EE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F389A824229342E100CE30EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F389A825229342E100CE30EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F389A827229342E100CE30EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WPZC96H3B4;
+				INFOPLIST_FILE = MusicBrainz/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyzkov.MusicBrainz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F389A828229342E100CE30EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WPZC96H3B4;
+				INFOPLIST_FILE = MusicBrainz/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyzkov.MusicBrainz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F389A82A229342E100CE30EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WPZC96H3B4;
+				INFOPLIST_FILE = MusicBrainzTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyzkov.MusicBrainzTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MusicBrainz.app/MusicBrainz";
+			};
+			name = Debug;
+		};
+		F389A82B229342E100CE30EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WPZC96H3B4;
+				INFOPLIST_FILE = MusicBrainzTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyzkov.MusicBrainzTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MusicBrainz.app/MusicBrainz";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F389A74B229342E000CE30EE /* Build configuration list for PBXProject "MusicBrainz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F389A824229342E100CE30EE /* Debug */,
+				F389A825229342E100CE30EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F389A826229342E100CE30EE /* Build configuration list for PBXNativeTarget "MusicBrainz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F389A827229342E100CE30EE /* Debug */,
+				F389A828229342E100CE30EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F389A829229342E100CE30EE /* Build configuration list for PBXNativeTarget "MusicBrainzTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F389A82A229342E100CE30EE /* Debug */,
+				F389A82B229342E100CE30EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F389A748229342E000CE30EE /* Project object */;
+}
