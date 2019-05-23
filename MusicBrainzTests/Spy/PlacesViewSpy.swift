@@ -6,6 +6,7 @@
 //  Copyright © 2019 lyzkov. All rights reserved.
 //
 
+import XCTest
 @testable import MusicBrainz
 
 final class PlacesViewSpy: PlacesViewProtocol {
@@ -16,6 +17,25 @@ final class PlacesViewSpy: PlacesViewProtocol {
 
     func present(region: RegionType) {
         didPresentRegion = region
+    }
+
+    var didAddPlaces: [PlaceAnnotation] = []
+
+    func add(place: PlaceAnnotation) {
+        didAddPlaces.append(place)
+    }
+
+    var didRemovePlaces: [PlaceAnnotation] = []
+
+    var didRemoveExpectation: XCTestExpectation? = nil {
+        willSet {
+            newValue?.assertForOverFulfill = false
+        }
+    }
+
+    func remove(place: PlaceAnnotation) {
+        didRemoveExpectation?.fulfill()
+        didRemovePlaces.append(place)
     }
 
 }

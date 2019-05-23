@@ -31,6 +31,14 @@ final class PlacesView: UIViewController, PlacesViewProtocol {
     func present(region: RegionType) {
         mapView.setRegion(MKCoordinateRegion(from: region), animated: true)
     }
+
+    func add(place: PlaceAnnotation) {
+        mapView.addAnnotation(place)
+    }
+
+    func remove(place: PlaceAnnotation) {
+        mapView.removeAnnotation(place)
+    }
     
 }
 
@@ -41,6 +49,14 @@ extension MKCoordinateRegion {
         center = CLLocationCoordinate2DMake(region.latitude, region.longitude)
         span.latitudeDelta = region.delta
         span.longitudeDelta = region.delta
+    }
+
+}
+
+extension PlaceAnnotation: MKAnnotation {
+
+    var coordinate: CLLocationCoordinate2D {
+        return CLLocationCoordinate2DMake(latitude, longitude)
     }
 
 }

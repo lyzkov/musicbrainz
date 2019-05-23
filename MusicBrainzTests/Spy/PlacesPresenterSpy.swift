@@ -22,4 +22,10 @@ final class PlacesPresenterSpy: PlacesPresenterOutputProtocol {
         didShowError = error
     }
 
+    var didPresentPlaces: [PlaceAnnotation]?
+
+    func present(places: [PlaceAnnotation]) {
+        didPresentPlaces = places
+    }
+
 }

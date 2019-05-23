@@ -35,19 +35,34 @@ final class PlacesPresenterTests: XCTestCase {
         XCTAssertTrue(interactor.didLoadRegion)
     }
 
-    func testPresent_invokesViewWithRegion() {
-        let latitude = 0.0, longitude = 0.0, span = 10.0
-        let region = Region(
-            from: LocationStub(latitude: latitude, longitude: longitude),
-            span: span
-        )
+    func testPresentRegion_presentsRegionInView() {
+        let region = Region.fake()
 
         presenter.present(region: region)
 
-        XCTAssertEqual(latitude, view.didPresentRegion?.latitude)
-        XCTAssertEqual(longitude, view.didPresentRegion?.longitude)
-        XCTAssertEqual(span, view.didPresentRegion?.delta)
+        XCTAssertEqual(region, view.didPresentRegion as? Region)
         XCTAssertNil(wireframe.didPresentAlertError)
+    }
+
+    func testPresentPlaces_addsPlacesInView() {
+        let places: [PlaceAnnotation] = [.fake(), .fake()]
+
+        presenter.present(places: places)
+
+        XCTAssertEqual(places, view.didAddPlaces)
+    }
+
+    func testPresentPlaces_removesPlacesFromViewAfterALifeSpan() {
+        let places: [PlaceAnnotation] = [.fake(), .fake()]
+
+        presenter.present(places: places)
+
+        XCTAssertTrue(view.didRemovePlaces.isEmpty)
+
+        view.didRemoveExpectation = expectation(description: "remove place")
+        waitForExpectations(timeout: TimeInterval(places.first!.lifespan!)) { _ in
+            XCTAssertEqual(places, self.view.didRemovePlaces)
+        }
     }
 
     func testShow_invokesWireframeAlertWithError() {

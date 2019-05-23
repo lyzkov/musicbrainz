@@ -6,6 +6,7 @@
 //  Copyright © 2019 lyzkov. All rights reserved.
 //
 
+import Foundation
 @testable import MusicBrainz
 
 final class PlacesInteractorSpy: PlacesInteractorProtocol {
@@ -16,6 +17,15 @@ final class PlacesInteractorSpy: PlacesInteractorProtocol {
 
     func loadRegion() {
         didLoadRegion = true
+    }
+
+    var didLoadPlacesRegion: RegionType?
+
+    var didLoadPlacesSince: Date?
+
+    func loadPlaces(region: RegionType, since: Date) {
+        didLoadPlacesRegion = region
+        didLoadPlacesSince = since
     }
 
 }

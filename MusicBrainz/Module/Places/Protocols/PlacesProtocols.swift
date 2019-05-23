@@ -15,6 +15,8 @@ import MapKit
 protocol PlacesViewProtocol: class {
     var presenter: PlacesPresenterInputProtocol?  { get set }
     func present(region: RegionType)
+    func add(place: PlaceAnnotation)
+    func remove(place: PlaceAnnotation)
 }
 
 // MARK: - Wireframe
@@ -35,6 +37,7 @@ protocol PlacesPresenterInputProtocol: class {
 
 protocol PlacesPresenterOutputProtocol: class {
     func present(region: RegionType)
+    func present(places: [PlaceAnnotation])
     func show(error: Error)
 }
 
@@ -42,9 +45,8 @@ protocol PlacesPresenterOutputProtocol: class {
 
 protocol PlacesInteractorProtocol: class {
     var presenter: PlacesPresenterOutputProtocol?  { get set }
-//    var apiDataManager: PlacesAPIDataManagerInputProtocol { get }
-//    var locationDataManager: PlacesLocationDataManagerInputProtocol { get }
     func loadRegion()
+    func loadPlaces(region: RegionType, since: Date)
 }
 
 // MARK: - DataManager
@@ -53,6 +55,8 @@ protocol PlacesDataManagerInputProtocol: class {
 }
 
 protocol PlacesAPIDataManagerInputProtocol: class {
+    func fetch(region: RegionType, since: Date, offset: Int, limit: Int, completion: @escaping (Result<[Place], Error>) -> Void)
+    func fetchAll(region: RegionType, since: Date, completion: @escaping (Result<[Place], Error>) -> Void)
 }
 
 protocol PlacesLocationDataManagerInputProtocol: class {

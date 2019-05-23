@@ -34,6 +34,18 @@
 		F389A8712294A3B700CE30EE /* PlacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A8702294A3B700CE30EE /* PlacesView.swift */; };
 		F389A8742294A3C300CE30EE /* PlacesWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A8732294A3C300CE30EE /* PlacesWireframe.swift */; };
 		F389A8762294A3E900CE30EE /* Places.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F389A8752294A3E900CE30EE /* Places.storyboard */; };
+		F389A8782294A74500CE30EE /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A8772294A74500CE30EE /* APIModel.swift */; };
+		F3F75B932295828B0050F1FC /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F75B922295828B0050F1FC /* Endpoint.swift */; };
+		F3F75B95229582A80050F1FC /* RestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F75B94229582A80050F1FC /* RestAPI.swift */; };
+		F3F75B97229584020050F1FC /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F75B96229584020050F1FC /* Operators.swift */; };
+		F3F75B992295857C0050F1FC /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F75B982295857C0050F1FC /* Client.swift */; };
+		F3F75B9C2295930B0050F1FC /* MusicBrainzAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F75B9B2295930B0050F1FC /* MusicBrainzAPI.swift */; };
+		F3F75B9E2295E6EB0050F1FC /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F75B9D2295E6EB0050F1FC /* ParameterEncoding.swift */; };
+		F3F75BA0229707E90050F1FC /* Fakes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F75B9F229707E90050F1FC /* Fakes.swift */; };
+		F3F75BA222971AC10050F1FC /* PlacesAPIDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F75BA122971AC10050F1FC /* PlacesAPIDataManagerTests.swift */; };
+		F3F75BA422971AFC0050F1FC /* PlacesAPIDataManagerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F75BA322971AFC0050F1FC /* PlacesAPIDataManagerSpy.swift */; };
+		F3F75BA7229724390050F1FC /* ClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F75BA6229724390050F1FC /* ClientSpy.swift */; };
+		F3F75BAB229724850050F1FC /* Model+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F75BAA229724850050F1FC /* Model+Equatable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +90,18 @@
 		F389A8702294A3B700CE30EE /* PlacesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesView.swift; sourceTree = "<group>"; };
 		F389A8732294A3C300CE30EE /* PlacesWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesWireframe.swift; sourceTree = "<group>"; };
 		F389A8752294A3E900CE30EE /* Places.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Places.storyboard; sourceTree = "<group>"; };
+		F389A8772294A74500CE30EE /* APIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
+		F3F75B922295828B0050F1FC /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		F3F75B94229582A80050F1FC /* RestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPI.swift; sourceTree = "<group>"; };
+		F3F75B96229584020050F1FC /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		F3F75B982295857C0050F1FC /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		F3F75B9B2295930B0050F1FC /* MusicBrainzAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicBrainzAPI.swift; sourceTree = "<group>"; };
+		F3F75B9D2295E6EB0050F1FC /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		F3F75B9F229707E90050F1FC /* Fakes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fakes.swift; sourceTree = "<group>"; };
+		F3F75BA122971AC10050F1FC /* PlacesAPIDataManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesAPIDataManagerTests.swift; sourceTree = "<group>"; };
+		F3F75BA322971AFC0050F1FC /* PlacesAPIDataManagerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesAPIDataManagerSpy.swift; sourceTree = "<group>"; };
+		F3F75BA6229724390050F1FC /* ClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientSpy.swift; sourceTree = "<group>"; };
+		F3F75BAA229724850050F1FC /* Model+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model+Equatable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +178,8 @@
 		F389A820229342E100CE30EE /* MusicBrainzTests */ = {
 			isa = PBXGroup;
 			children = (
+				F3F75BA92297246B0050F1FC /* Helper */,
+				F3F75BA8229724450050F1FC /* Fake */,
 				F389A84822946DBF00CE30EE /* Spy */,
 				F389A84022942A6C00CE30EE /* Module */,
 				F389A823229342E100CE30EE /* Info.plist */,
@@ -193,6 +219,8 @@
 		F389A8352293DFDB00CE30EE /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				F3F75B9A229592DE0050F1FC /* MusicBrainzAPI */,
+				F3F75B63229575770050F1FC /* Networking */,
 				F389A8372293E15500CE30EE /* Wireframe */,
 				F389A7E6229342E000CE30EE /* Extensions */,
 			);
@@ -229,6 +257,7 @@
 				F389A84B22946EB100CE30EE /* PlacesInteractorTests.swift */,
 				F389A84222942AB600CE30EE /* PlacesLocationDataManagerTests.swift */,
 				F389A8512294748A00CE30EE /* PlacesPresenterTests.swift */,
+				F3F75BA122971AC10050F1FC /* PlacesAPIDataManagerTests.swift */,
 			);
 			path = Places;
 			sourceTree = "<group>";
@@ -242,6 +271,8 @@
 				F389A84D229473D800CE30EE /* PlacesPresenterSpy.swift */,
 				F389A853229478DA00CE30EE /* PlacesViewSpy.swift */,
 				F389A8572294791C00CE30EE /* PlacesWireframeSpy.swift */,
+				F3F75BA322971AFC0050F1FC /* PlacesAPIDataManagerSpy.swift */,
+				F3F75BA6229724390050F1FC /* ClientSpy.swift */,
 			);
 			path = Spy;
 			sourceTree = "<group>";
@@ -270,6 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				F389A8612294A36B00CE30EE /* PlacesAPIDataManager.swift */,
+				F389A8772294A74500CE30EE /* APIModel.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -317,6 +349,42 @@
 			);
 			name = Wireframe;
 			path = Module/Places/Wireframe;
+			sourceTree = "<group>";
+		};
+		F3F75B63229575770050F1FC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F3F75B922295828B0050F1FC /* Endpoint.swift */,
+				F3F75B94229582A80050F1FC /* RestAPI.swift */,
+				F3F75B96229584020050F1FC /* Operators.swift */,
+				F3F75B982295857C0050F1FC /* Client.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F3F75B9A229592DE0050F1FC /* MusicBrainzAPI */ = {
+			isa = PBXGroup;
+			children = (
+				F3F75B9B2295930B0050F1FC /* MusicBrainzAPI.swift */,
+				F3F75B9D2295E6EB0050F1FC /* ParameterEncoding.swift */,
+			);
+			path = MusicBrainzAPI;
+			sourceTree = "<group>";
+		};
+		F3F75BA8229724450050F1FC /* Fake */ = {
+			isa = PBXGroup;
+			children = (
+				F3F75B9F229707E90050F1FC /* Fakes.swift */,
+			);
+			path = Fake;
+			sourceTree = "<group>";
+		};
+		F3F75BA92297246B0050F1FC /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F3F75BAA229724850050F1FC /* Model+Equatable.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -420,20 +488,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3F75B9C2295930B0050F1FC /* MusicBrainzAPI.swift in Sources */,
 				F389A86E2294A3AA00CE30EE /* PlacesProtocols.swift in Sources */,
 				F389A7C6229342E000CE30EE /* RootWireframe.swift in Sources */,
 				F389A8652294A36B00CE30EE /* PlacesAPIDataManager.swift in Sources */,
 				F389A85A2294A32700CE30EE /* UIVIewController.swift in Sources */,
+				F389A8782294A74500CE30EE /* APIModel.swift in Sources */,
 				F389A7C2229342E000CE30EE /* AppDependencies.swift in Sources */,
+				F3F75B97229584020050F1FC /* Operators.swift in Sources */,
 				F389A8712294A3B700CE30EE /* PlacesView.swift in Sources */,
 				F389A755229342E000CE30EE /* AppDelegate.swift in Sources */,
 				F389A8632294A36B00CE30EE /* PlacesLocationDataManager.swift in Sources */,
 				F389A8742294A3C300CE30EE /* PlacesWireframe.swift in Sources */,
 				F389A8472294315E00CE30EE /* main.swift in Sources */,
 				F389A86B2294A39A00CE30EE /* PlacesPresenter.swift in Sources */,
+				F3F75B95229582A80050F1FC /* RestAPI.swift in Sources */,
 				F389A8682294A38900CE30EE /* PlacesInteractor.swift in Sources */,
+				F3F75B9E2295E6EB0050F1FC /* ParameterEncoding.swift in Sources */,
 				F389A8452294311400CE30EE /* FakeAppDelegate.swift in Sources */,
 				F389A8642294A36B00CE30EE /* Region.swift in Sources */,
+				F3F75B932295828B0050F1FC /* Endpoint.swift in Sources */,
+				F3F75B992295857C0050F1FC /* Client.swift in Sources */,
 				F389A8622294A36B00CE30EE /* Location.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,15 +517,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3F75BA7229724390050F1FC /* ClientSpy.swift in Sources */,
 				F389A8502294741100CE30EE /* PlacesLocationDataManagerSpy.swift in Sources */,
 				F389A8582294791C00CE30EE /* PlacesWireframeSpy.swift in Sources */,
 				F389A84C22946EB100CE30EE /* PlacesInteractorTests.swift in Sources */,
+				F3F75BAB229724850050F1FC /* Model+Equatable.swift in Sources */,
+				F3F75BA422971AFC0050F1FC /* PlacesAPIDataManagerSpy.swift in Sources */,
 				F389A84322942AB600CE30EE /* PlacesLocationDataManagerTests.swift in Sources */,
 				F389A8562294790100CE30EE /* PlacesInteractorSpy.swift in Sources */,
 				F389A854229478DA00CE30EE /* PlacesViewSpy.swift in Sources */,
+				F3F75BA0229707E90050F1FC /* Fakes.swift in Sources */,
 				F389A84A22946DE400CE30EE /* LocationManagerSpy.swift in Sources */,
 				F389A8522294748A00CE30EE /* PlacesPresenterTests.swift in Sources */,
 				F389A84E229473D800CE30EE /* PlacesPresenterSpy.swift in Sources */,
+				F3F75BA222971AC10050F1FC /* PlacesAPIDataManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

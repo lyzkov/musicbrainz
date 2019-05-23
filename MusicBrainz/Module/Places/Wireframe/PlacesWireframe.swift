@@ -13,15 +13,21 @@ final class PlacesWireframe {
     
     var rootWireframe: RootWireframe?
 
-    private var view: PlacesView {
-        let view: PlacesView = .instantiate(name: "Places")
+    private weak var _view: PlacesView?
+
+    private func prepareView() -> PlacesView {
+        _view = .instantiate(name: "Places")
         let interactor = PlacesInteractor()
         let presenter = PlacesPresenter(interface: view, interactor: interactor, wireframe: self)
 
         view.presenter = presenter
         interactor.presenter = presenter
 
-        return view
+        return _view!
+    }
+
+    var view: PlacesView {
+        return _view ?? prepareView()
     }
 
 }

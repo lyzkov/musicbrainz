@@ -32,12 +32,27 @@ extension PlacesPresenter: PlacesPresenterInputProtocol {
         interactor.loadRegion()
     }
 
+    private func loadPlaces(region: RegionType) {
+        interactor.loadPlaces(region: region)
+    }
+
 }
 
 extension PlacesPresenter: PlacesPresenterOutputProtocol {
 
     func present(region: RegionType) {
+        loadPlaces(region: region)
         view?.present(region: region)
+    }
+
+    func present(places: [PlaceAnnotation]) {
+        for place in places {
+            view?.add(place: place)
+
+            Timer.scheduledTimer(withTimeInterval: TimeInterval(place.lifespan ?? 0), repeats: false) { [view] _ in
+                view?.remove(place: place)
+            }
+        }
     }
 
     func show(error: Error) {
