@@ -19,7 +19,8 @@ final class PlacesAPIDataManager: PlacesAPIDataManagerInputProtocol {
 
     static var limit = 100
 
-    func fetch(region: RegionType, since: Date, offset: Int, limit: Int = limit, completion: @escaping (Result<[Place], Error>) -> Void) {
+    func fetch(region: RegionType, since: Date, offset: Int, limit: Int = limit,
+               completion: @escaping (Result<[Place], Error>) -> Void) {
         let endpoint = MusicBrainzAPI.PlacesEndpoint(region: region, since: since, offset: offset, limit: limit)
 
         return client.decodedData(from: endpoint) { result in
@@ -33,18 +34,26 @@ final class PlacesAPIDataManager: PlacesAPIDataManagerInputProtocol {
     }
 
     func fetchAll(region: RegionType, since: Date, completion: @escaping (Result<[Place], Error>) -> Void) {
-        fetchAll(region: region, since: since, offset: 0, limit: PlacesAPIDataManager.limit, acc: [], completion: completion)
+        fetchAll(
+            region: region,
+            since: since,
+            offset: 0,
+            limit: PlacesAPIDataManager.limit,
+            acc: [],
+            completion: completion
+        )
     }
 
-    private func fetchAll(region: RegionType, since: Date, offset: Int = 0, limit: Int = 100, acc: [Place] = [], completion: @escaping (Result<[Place], Error>) -> Void) {
+    private func fetchAll(region: RegionType, since: Date, offset: Int = 0, limit: Int = 100, acc: [Place] = [],
+                          completion: @escaping (Result<[Place], Error>) -> Void) {
         let endpoint = MusicBrainzAPI.PlacesEndpoint(region: region, since: since, offset: offset, limit: limit)
 
-        return client.decodedData(from: endpoint) { result in
+        return client.decodedData(from: endpoint) { [weak self] result in
             switch result {
             case .success(let placesList):
                 let isNext = placesList.offset + limit < placesList.count
                 if isNext {
-                    self.fetchAll(
+                    self?.fetchAll(
                         region: region,
                         since: since,
                         offset: offset + limit,

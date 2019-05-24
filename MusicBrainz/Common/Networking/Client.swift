@@ -9,8 +9,12 @@
 import Foundation
 
 protocol ClientProtocol {
-    func data<Endpoint: EndpointType>(from endpoint: Endpoint, completion: @escaping (Result<Data, Error>) -> Void)
-    func decodedData<Resource: ResourceType>(from endpoint: Resource, completion: @escaping (Result<Resource.DataType, Error>) -> Void)
+    func data<Endpoint>
+        (from endpoint: Endpoint, completion: @escaping (Result<Data, Error>) -> Void)
+        where Endpoint: EndpointType
+    func decodedData<Resource>
+        (from endpoint: Resource, completion: @escaping (Result<Resource.DataType, Error>) -> Void)
+        where Resource: ResourceType
 }
 
 final class Client: ClientProtocol {
@@ -25,7 +29,8 @@ final class Client: ClientProtocol {
         }
     }
 
-    func decodedData<Resource: ResourceType>(from endpoint: Resource, completion: @escaping (Result<Resource.DataType, Error>) -> Void) {
+    func decodedData<Resource: ResourceType>
+        (from endpoint: Resource, completion: @escaping (Result<Resource.DataType, Error>) -> Void) {
         _data(from: endpoint) { result in
             switch result {
             case .success(let data):
@@ -47,14 +52,13 @@ final class Client: ClientProtocol {
         }
     }
 
-    private func _data<Endpoint: EndpointType>(from endpoint: Endpoint, completion: @escaping (Result<Data, Error>) -> Void) {
+    private func _data<Endpoint: EndpointType>
+        (from endpoint: Endpoint, completion: @escaping (Result<Data, Error>) -> Void) {
         let base = Endpoint.api.base
 
         guard let request = try? endpoint.encoding.encode(endpoint, with: base.parameters + endpoint.parameters) else {
             return
         }
-
-        print(request.url!.absoluteString)
 
         session.dataTask(with: request) { data, response, error in
             if let error = error {

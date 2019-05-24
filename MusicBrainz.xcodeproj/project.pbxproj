@@ -24,9 +24,7 @@
 		F389A8562294790100CE30EE /* PlacesInteractorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A8552294790100CE30EE /* PlacesInteractorSpy.swift */; };
 		F389A8582294791C00CE30EE /* PlacesWireframeSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A8572294791C00CE30EE /* PlacesWireframeSpy.swift */; };
 		F389A85A2294A32700CE30EE /* UIVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A8592294A32700CE30EE /* UIVIewController.swift */; };
-		F389A8622294A36B00CE30EE /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A85D2294A36B00CE30EE /* Location.swift */; };
 		F389A8632294A36B00CE30EE /* PlacesLocationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A85E2294A36B00CE30EE /* PlacesLocationDataManager.swift */; };
-		F389A8642294A36B00CE30EE /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A85F2294A36B00CE30EE /* Region.swift */; };
 		F389A8652294A36B00CE30EE /* PlacesAPIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A8612294A36B00CE30EE /* PlacesAPIDataManager.swift */; };
 		F389A8682294A38900CE30EE /* PlacesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A8672294A38900CE30EE /* PlacesInteractor.swift */; };
 		F389A86B2294A39A00CE30EE /* PlacesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A86A2294A39A00CE30EE /* PlacesPresenter.swift */; };
@@ -34,7 +32,7 @@
 		F389A8712294A3B700CE30EE /* PlacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A8702294A3B700CE30EE /* PlacesView.swift */; };
 		F389A8742294A3C300CE30EE /* PlacesWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A8732294A3C300CE30EE /* PlacesWireframe.swift */; };
 		F389A8762294A3E900CE30EE /* Places.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F389A8752294A3E900CE30EE /* Places.storyboard */; };
-		F389A8782294A74500CE30EE /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A8772294A74500CE30EE /* APIModel.swift */; };
+		F389A8782294A74500CE30EE /* PlacesAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389A8772294A74500CE30EE /* PlacesAPIModel.swift */; };
 		F3F75B932295828B0050F1FC /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F75B922295828B0050F1FC /* Endpoint.swift */; };
 		F3F75B95229582A80050F1FC /* RestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F75B94229582A80050F1FC /* RestAPI.swift */; };
 		F3F75B97229584020050F1FC /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F75B96229584020050F1FC /* Operators.swift */; };
@@ -46,6 +44,7 @@
 		F3F75BA422971AFC0050F1FC /* PlacesAPIDataManagerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F75BA322971AFC0050F1FC /* PlacesAPIDataManagerSpy.swift */; };
 		F3F75BA7229724390050F1FC /* ClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F75BA6229724390050F1FC /* ClientSpy.swift */; };
 		F3F75BAB229724850050F1FC /* Model+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F75BAA229724850050F1FC /* Model+Equatable.swift */; };
+		F3F75BAD22976C680050F1FC /* PlacesLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F75BAC22976C680050F1FC /* PlacesLocationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,9 +79,7 @@
 		F389A8552294790100CE30EE /* PlacesInteractorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesInteractorSpy.swift; sourceTree = "<group>"; };
 		F389A8572294791C00CE30EE /* PlacesWireframeSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesWireframeSpy.swift; sourceTree = "<group>"; };
 		F389A8592294A32700CE30EE /* UIVIewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIVIewController.swift; path = Common/Extensions/UIVIewController.swift; sourceTree = "<group>"; };
-		F389A85D2294A36B00CE30EE /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		F389A85E2294A36B00CE30EE /* PlacesLocationDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesLocationDataManager.swift; sourceTree = "<group>"; };
-		F389A85F2294A36B00CE30EE /* Region.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		F389A8612294A36B00CE30EE /* PlacesAPIDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesAPIDataManager.swift; sourceTree = "<group>"; };
 		F389A8672294A38900CE30EE /* PlacesInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesInteractor.swift; sourceTree = "<group>"; };
 		F389A86A2294A39A00CE30EE /* PlacesPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesPresenter.swift; sourceTree = "<group>"; };
@@ -90,7 +87,7 @@
 		F389A8702294A3B700CE30EE /* PlacesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesView.swift; sourceTree = "<group>"; };
 		F389A8732294A3C300CE30EE /* PlacesWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesWireframe.swift; sourceTree = "<group>"; };
 		F389A8752294A3E900CE30EE /* Places.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Places.storyboard; sourceTree = "<group>"; };
-		F389A8772294A74500CE30EE /* APIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
+		F389A8772294A74500CE30EE /* PlacesAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesAPIModel.swift; sourceTree = "<group>"; };
 		F3F75B922295828B0050F1FC /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		F3F75B94229582A80050F1FC /* RestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPI.swift; sourceTree = "<group>"; };
 		F3F75B96229584020050F1FC /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
@@ -102,6 +99,7 @@
 		F3F75BA322971AFC0050F1FC /* PlacesAPIDataManagerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesAPIDataManagerSpy.swift; sourceTree = "<group>"; };
 		F3F75BA6229724390050F1FC /* ClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientSpy.swift; sourceTree = "<group>"; };
 		F3F75BAA229724850050F1FC /* Model+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model+Equatable.swift"; sourceTree = "<group>"; };
+		F3F75BAC22976C680050F1FC /* PlacesLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesLocationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -290,9 +288,8 @@
 		F389A85C2294A36B00CE30EE /* Location */ = {
 			isa = PBXGroup;
 			children = (
-				F389A85D2294A36B00CE30EE /* Location.swift */,
 				F389A85E2294A36B00CE30EE /* PlacesLocationDataManager.swift */,
-				F389A85F2294A36B00CE30EE /* Region.swift */,
+				F3F75BAC22976C680050F1FC /* PlacesLocationModel.swift */,
 			);
 			path = Location;
 			sourceTree = "<group>";
@@ -301,7 +298,7 @@
 			isa = PBXGroup;
 			children = (
 				F389A8612294A36B00CE30EE /* PlacesAPIDataManager.swift */,
-				F389A8772294A74500CE30EE /* APIModel.swift */,
+				F389A8772294A74500CE30EE /* PlacesAPIModel.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -493,11 +490,12 @@
 				F389A7C6229342E000CE30EE /* RootWireframe.swift in Sources */,
 				F389A8652294A36B00CE30EE /* PlacesAPIDataManager.swift in Sources */,
 				F389A85A2294A32700CE30EE /* UIVIewController.swift in Sources */,
-				F389A8782294A74500CE30EE /* APIModel.swift in Sources */,
+				F389A8782294A74500CE30EE /* PlacesAPIModel.swift in Sources */,
 				F389A7C2229342E000CE30EE /* AppDependencies.swift in Sources */,
 				F3F75B97229584020050F1FC /* Operators.swift in Sources */,
 				F389A8712294A3B700CE30EE /* PlacesView.swift in Sources */,
 				F389A755229342E000CE30EE /* AppDelegate.swift in Sources */,
+				F3F75BAD22976C680050F1FC /* PlacesLocationModel.swift in Sources */,
 				F389A8632294A36B00CE30EE /* PlacesLocationDataManager.swift in Sources */,
 				F389A8742294A3C300CE30EE /* PlacesWireframe.swift in Sources */,
 				F389A8472294315E00CE30EE /* main.swift in Sources */,
@@ -506,10 +504,8 @@
 				F389A8682294A38900CE30EE /* PlacesInteractor.swift in Sources */,
 				F3F75B9E2295E6EB0050F1FC /* ParameterEncoding.swift in Sources */,
 				F389A8452294311400CE30EE /* FakeAppDelegate.swift in Sources */,
-				F389A8642294A36B00CE30EE /* Region.swift in Sources */,
 				F3F75B932295828B0050F1FC /* Endpoint.swift in Sources */,
 				F3F75B992295857C0050F1FC /* Client.swift in Sources */,
-				F389A8622294A36B00CE30EE /* Location.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -55,7 +55,8 @@ protocol PlacesDataManagerInputProtocol: class {
 }
 
 protocol PlacesAPIDataManagerInputProtocol: class {
-    func fetch(region: RegionType, since: Date, offset: Int, limit: Int, completion: @escaping (Result<[Place], Error>) -> Void)
+    func fetch(region: RegionType, since: Date, offset: Int, limit: Int,
+               completion: @escaping (Result<[Place], Error>) -> Void)
     func fetchAll(region: RegionType, since: Date, completion: @escaping (Result<[Place], Error>) -> Void)
 }
 
